@@ -1,0 +1,36 @@
+{
+    "name": "nodegram",
+    "description": "Display your latest Instagram photos with Node.js",
+    "main": "app.js",
+    "version": "0.0.1",
+    "author": "Pedro Rogério",
+    "homepage": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./bin/www"
+    },
+    "dependencies": {
+        "express": "~4.12.0",
+        "request": "~2.53.0",
+        "moment": "~2.9.0",
+        "ejs": "~2.3.1"
+    },
+    "devDependencies": {
+        "nodemon": "*",
+        "grunt": "~0.4.5",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-contrib-cssmin": "~0.12.2"
+    },
+    "keywords": [
+        "instagram",
+        "api"
+    ],
+    "repository": "https://github.com/pinceladasdaweb/Nodegram",
+    "bugs": {
+        "url": "https://github.com/pinceladasdaweb/Nodegram/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+    }]
+}

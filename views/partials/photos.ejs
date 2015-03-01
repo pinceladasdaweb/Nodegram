@@ -1,0 +1,14 @@
+<% for(var i = 0; i < data.data.length; i++) {%>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="photo-box">
+            <div class="image-wrap">
+                <a href="<%= data.data[i].link %>"><img src="<%= data.data[i].images.standard_resolution.url %>"></a>
+                <div class="likes"><%= data.data[i].likes.count %> Likes</div>
+            </div>
+            <div class="description">
+                <%= data.data[i].caption.text %>
+                <div class="date"><%= moment.unix(data.data[i].created_time).fromNow(); %></div>
+            </div>
+        </div>
+    </div>
+<% } %>
