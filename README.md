@@ -48,11 +48,11 @@ $ grunt
 
 ## Contributing
 
-Check [CONTRIBUTING.md](https://github.com/pinceladasdaweb/nodejs-boilerplate/blob/master/CONTRIBUTING.md) for more information.
+Check [CONTRIBUTING.md](https://github.com/pinceladasdaweb/Nodegram/blob/master/CONTRIBUTING.md) for more information.
 
 ## History
 
-Check [Releases](https://github.com/pinceladasdaweb/nodejs-boilerplate/releases) for detailed changelog.
+Check [Releases](https://github.com/pinceladasdaweb/Nodegram/releases) for detailed changelog.
 
 ## License
 
