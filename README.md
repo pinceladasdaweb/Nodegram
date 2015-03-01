@@ -2,6 +2,9 @@
 
 Display your latest Instagram photos with Node.js.
 
+
+![](https://raw.github.com/pinceladasdaweb/Nodegram/master/screenshot.jpg)
+
 ## Getting Started
 
 ```bash
