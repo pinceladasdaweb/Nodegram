@@ -16,7 +16,7 @@ $ npm install
 
 ## How to Configure
 
-Open the file [`config/config.ejs`](config/config.ejs) and fill in your details:
+Open the file [`config/config.js`](config/config.js) and fill in your details:
 
 | Name                               | Description                                                 |
 | ---------------------------------- |:-----------------------------------------------------------:|
@@ -40,7 +40,7 @@ $ npm start
 
 ## How to customize CSS
 
-Open files in [`public/css/souce/`](public/css/souce/) and customize as you wish. Then run the following command in the terminal to make the CSS minification:
+Open files in public/css/souce/ and customize as you wish. Then run the following command in the terminal to make the CSS minification:
 
 ```bash
 $ grunt
