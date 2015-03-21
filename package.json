@@ -2,7 +2,7 @@
     "name": "nodegram",
     "description": "Display your latest Instagram photos with Node.js",
     "main": "app.js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Pedro Rogério",
     "homepage": "",
     "scripts": {
@@ -10,7 +10,7 @@
         "start": "nodemon ./bin/www"
     },
     "dependencies": {
-        "express": "~4.12.2",
+        "express": "~4.12.3",
         "request": "~2.53.0",
         "moment": "~2.9.0",
         "ejs": "~2.3.1"
