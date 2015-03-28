@@ -1,0 +1,5 @@
+<div class="social">
+    <% for(var i = 0; i < config.instagram.social.length; i++) { %>
+    <a class="<%= config.instagram.social[i].network %>" href="<%= config.instagram.social[i].url %><%= config.instagram.social[i].username %>"><%= config.instagram.social[i].network %></a>
+    <% } %>
+</div>
