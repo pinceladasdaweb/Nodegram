@@ -26,6 +26,7 @@ header img {
   margin-left: -600px;
   width: 1200px;
 }
+
 @media screen and (min-width: 1200px) {
   header img {
     top: auto;
@@ -34,6 +35,7 @@ header img {
     width: 100%;
   }
 }
+
 header .name {
   font-size: 21px;
   position: absolute;
@@ -41,23 +43,27 @@ header .name {
   left: 50px;
   color: #FFF;
 }
+
 header .titles {
   position: absolute;
   bottom: 40%;
   width: 100%;
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   header .titles {
     bottom: 50%;
   }
 }
+
 header h1, header h2 {
   font-family: 'Lato';
   width: 100%;
   color: #FFF;
   margin: 0;
 }
+
 header h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -65,24 +71,70 @@ header h1 {
   letter-spacing: 0.06em;
   margin-bottom: 10px;
 }
+
 header h1 span {
   display: block;
 }
+
 @media screen and (min-width: 992px) {
   header h1 span {
     display: inline;
   }
 }
+
 header h2 {
   font-size: 16px;
   width: 70%;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 1200px) {
   header h2 {
     width: 100%;
     margin: 0;
   }
+}
+
+header .social {
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+header .social a {
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin: 0 5px;
+  text-indent: -9999px;
+  background: url(../img/social-sprite.png) no-repeat;
+  opacity: 0.8;
+}
+
+header .social a:hover {
+  opacity: 1.0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
+  header .social a {
+    background: url(../img/social-sprite@2x.png) no-repeat;
+    -webkit-background-size: 76px 26px;
+    background-size: 76px 26px;
+  }
+}
+
+header .social a.facebook {
+  background-position: 0px 0px;
+}
+
+header .social a.twitter {
+  background-position: -25px 0px;
+}
+
+header .social a.instagram {
+  background-position: -50px 0px;
 }
 
 .instagram-wrapper {
@@ -98,12 +150,15 @@ header h2 {
   padding: 50px 0;
   color: #bbbbbb;
 }
+
 .instagram-content .photo-box {
   margin: 0 0 30px 0;
 }
+
 .instagram-content .photo-box .image-wrap img {
   width: 100%;
 }
+
 .instagram-content .photo-box .image-wrap .likes {
   position: absolute;
   bottom: 5px;
@@ -113,6 +168,7 @@ header h2 {
   background: rgba(0, 0, 0, 0.4);
   color: #FFF;
 }
+
 .instagram-content .photo-box .description {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -131,11 +187,13 @@ footer {
   padding: 30px 0;
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   footer {
     padding: 100px 0;
   }
 }
+
 footer h4 {
   font-size: 36px;
   text-align: center;
@@ -145,15 +203,18 @@ footer h4 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 footer .about-text {
   padding: 0 30px;
 }
+
 @media screen and (min-width: 1200px) {
   footer .about-text {
     width: 650px;
     margin: 0 auto;
   }
 }
+
 footer .contact-now-btn {
   display: inline-block;
   width: 70%;
@@ -166,17 +227,20 @@ footer .contact-now-btn {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 992px) {
   footer .contact-now-btn {
     width: 60%;
   }
 }
+
 @media screen and (min-width: 1200px) {
   footer .contact-now-btn {
     width: 20%;
     margin-top: 50px;
   }
 }
+
 footer .contact-now-btn:hover {
   background: #646873;
 }
@@ -190,6 +254,7 @@ footer .contact-now-btn:hover {
   color: #9b9b9b;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 992px) {
   .footer-bottom {
     padding: 40px 0;
