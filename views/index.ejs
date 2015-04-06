@@ -4,6 +4,13 @@
     <title><%= config.instagram.pageTitle %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        if ('attachEvent' in document.documentElement) {
+            document.createElement('header');
+            document.createElement('section');
+            document.createElement('footer');
+        }
+    </script>
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script|Montserrat" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
