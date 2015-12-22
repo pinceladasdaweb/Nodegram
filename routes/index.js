@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
         res.render('index', {
             config  : config,
             moment  : moment,
-            data    : body
+            body    : body
         });
     });
 });
