@@ -2,7 +2,7 @@
     "name": "nodegram",
     "description": "Display your latest Instagram photos with Node.js",
     "main": "app.js",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "author": "Pedro Rogério",
     "homepage": "",
     "scripts": {
@@ -10,16 +10,16 @@
         "start": "nodemon ./bin/www"
     },
     "dependencies": {
-        "express": "~4.12.4",
-        "request": "~2.57.0",
-        "moment": "~2.10.3",
-        "ejs": "~2.3.1"
+        "express": "~4.13.3",
+        "request": "~2.67.0",
+        "moment": "~2.10.6",
+        "ejs": "~2.3.4"
     },
     "devDependencies": {
         "nodemon": "*",
         "grunt": "~0.4.5",
         "grunt-contrib-watch": "~0.6.1",
-        "grunt-contrib-cssmin": "~0.12.3"
+        "grunt-contrib-cssmin": "~0.14.0"
     },
     "keywords": [
         "instagram",
