@@ -1,16 +1,20 @@
-<% for(var i = 0; i < body.data.length; i++) {%>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="photo-box">
-            <div class="image-wrap">
-                <a href="<%= body.data[i].link %>"><img src="<%= body.data[i].images.standard_resolution.url %>"></a>
-                <div class="likes"><%= body.data[i].likes.count %> Likes</div>
-            </div>
-            <div class="description">
-                <%if (body.data[i].caption) { %>
-                  <%= body.data[i].caption.text %>
-                <% } %>
-                <div class="date"><%= moment.unix(body.data[i].created_time).fromNow(); %></div>
+<%if (body.meta.code === 200) { %>
+    <% for(var i = 0; i < body.data.length; i++) {%>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="photo-box">
+                <div class="image-wrap">
+                    <a href="<%= body.data[i].link %>"><img src="<%= body.data[i].images.standard_resolution.url %>"></a>
+                    <div class="likes"><%= body.data[i].likes.count %> Likes</div>
+                </div>
+                <div class="description">
+                    <%if (body.data[i].caption) { %>
+                      <%= body.data[i].caption.text %>
+                    <% } %>
+                    <div class="date"><%= moment.unix(body.data[i].created_time).fromNow(); %></div>
+                </div>
             </div>
         </div>
-    </div>
+    <% } %>
+<% } else { %>
+    <p class="error"><%= body.meta.error_message %></p>
 <% } %>
