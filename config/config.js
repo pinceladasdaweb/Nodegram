@@ -4,7 +4,8 @@ module.exports = {
         pageSubTitle : 'An awesome page subtitle here.',
         aboutText    : 'About text here',
         email        : 'myemail@mysever.com',
-        access_token : '', //Your Instagram Access Token here
+        username     : 'pinceladasdaweb', // Your Instagram Username here
+        access_token : '966633.5b9e1e6.af5ba38b258641ea95fc23d378809a41', // Your Instagram Access Token here
         social : [
             {
                 network: 'facebook',
