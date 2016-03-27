@@ -28,6 +28,7 @@ Open the file [`config/config.js`](config/config.js) and fill in your details:
 | **aboutText**                      | Configure the about text here.                              |
 | **email**                          | Put your contact email here.                                |
 | **social**                         | Configure your social links here.                           |
+| **username**                       | Insert your instagram username here.                        |
 | **access_token**                   | Insert your instagram access token here.                    |
 
 ## How to obtain a Instagram Acess Token
