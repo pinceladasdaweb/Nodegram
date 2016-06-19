@@ -1,7 +1,7 @@
 {
     "name": "nodegram",
     "description": "Display your latest Instagram photos with Node.js",
-    "main": "server/index.js",
+    "main": "app.js",
     "version": "1.0.0",
     "author": "Pedro Rogério",
     "homepage": "",
