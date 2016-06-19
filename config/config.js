@@ -1,11 +1,12 @@
-module.exports = {
+export default {
     instagram: {
         pageTitle    : 'Nodegram - Instagram portfolio',
         pageSubTitle : 'An awesome page subtitle here.',
         aboutText    : 'About text here',
         email        : 'myemail@mysever.com',
-        username     : 'pinceladasdaweb', // Your Instagram Username here
-        access_token : '966633.5b9e1e6.af5ba38b258641ea95fc23d378809a41', // Your Instagram Access Token here
+        copyright    : 'Your company name here',
+        access_token : '966633.5b9e1e6.b7bee875bce54cd9a7f91eca19947c3b', // Your Instagram Access Token here
+        count        : 12, // Number of photos to display
         social : [
             {
                 network: 'facebook',

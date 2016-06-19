@@ -1,9 +1,11 @@
 #!/usr/bin/env node
-var app = require('../app'), server;
+import http from 'http';
+import app from '../app';
 
-server = app.listen(3000, '127.0.0.1', function () {
-    var host = server.address().address,
-        port = server.address().port;
+const host   = 'localhost';
+const port   = 3000;
+const server = http.createServer(app);
 
+server.listen(port, host, () => {
     console.log('App listening at http://%s:%s', host, port);
 });

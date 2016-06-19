@@ -1,42 +1,40 @@
-/*jslint node: true */
 "use strict";
 
-var express  = require('express'),
-    rp       = require('request-promise'),
-    moment   = require('moment'),
-    config   = require('../config/config.js'),
-    router   = express.Router(),
-    username = config.instagram.username,
-    token    = config.instagram.access_token,
-    options  = {
-        uri: 'https://api.instagram.com/v1/users/search',
-        qs: {
-            q: username,
-            access_token: token
-        },
-        json: true
-    };
+import express from 'express';
+import rp from 'request-promise';
+import moment from 'moment';
+import config from '../config/config';
 
-router.get('/', function (req, res) {
+const router  = express.Router();
+const token   = config.instagram.access_token;
+const options = {
+    uri: 'https://api.instagram.com/v1/users/self/media/recent/',
+    qs: {
+        access_token: config.instagram.access_token,
+        count: config.instagram.count
+    },
+    headers: {
+        'User-Agent': 'Request-Promise'
+    },
+    json: true
+};
+
+router.get('/', (req, res, next) => {
     rp(options)
-        .then(function (res) {
-            var id = res.data[0].id;
-
-            return rp({
-                uri: 'https://api.instagram.com/v1/users/' + id + '/media/recent/?access_token=' + token,
-                json: true
-            });
-        })
-        .then(function (json) {
-            res.render('index', {
-                config  : config,
-                moment  : moment,
-                body    : json
-            });
-        })
-        .catch(function (err) {
-            res.send(err);
+    .then((json) => {
+        res.render('index', {
+            config  : config,
+            moment  : moment,
+            body    : json
         });
+    })
+    .catch((err) => {
+        res.render('index', {
+            config  : config,
+            moment  : moment,
+            body    : err
+        });
+    });
 });
 
-module.exports = router;
+export default router;
