@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%= config.instagram.pageTitle %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        if ('attachEvent' in document.documentElement) {
+            document.createElement('header');
+            document.createElement('section');
+            document.createElement('footer');
+        }
+    </script>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script|Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <% include partials/header %>
+    </header>
+    <section class="instagram-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="instagram-content">
+                        <h3>Latest Photos</h3>
+                        <div class="row photos-wrap">
+                            <%= message %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <% include partials/footer %>
+    </footer>
+    <section class="footer-bottom"><%= moment().format('YYYY'); %> &copy; <%= config.instagram.copyright %>. All rights reserved.</section>
+</body>
+</html>
