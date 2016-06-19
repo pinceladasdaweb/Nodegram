@@ -35,6 +35,6 @@
     <footer>
         <% include partials/footer %>
     </footer>
-    <section class="footer-bottom"><%= moment().format('YYYY'); %> &copy; <%if (body.meta.code === 200) { %><%= body.data[0].user.full_name %><% } %>. All rights reserved.</section>
+    <section class="footer-bottom"><%= moment().format('YYYY'); %> &copy; <%= config.instagram.copyright %>. All rights reserved.</section>
 </body>
 </html>
