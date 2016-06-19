@@ -9,7 +9,7 @@ Display your latest Instagram photos with Node.js.
 
 ```bash
 # Get the latest snapshot
-$ git clone --depth=1 https://github.com/pinceladasdaweb/Nodegram.git myproject
+$ git clone https://github.com/pinceladasdaweb/Nodegram.git myproject
 $ cd myproject
 $ git remote rm origin
 
@@ -28,12 +28,13 @@ Open the file [`config/config.js`](config/config.js) and fill in your details:
 | **aboutText**                      | Configure the about text here.                              |
 | **email**                          | Put your contact email here.                                |
 | **social**                         | Configure your social links here.                           |
-| **username**                       | Insert your instagram username here.                        |
+| **copyright**                      | Insert your company name here.                              |
 | **access_token**                   | Insert your instagram access token here.                    |
+| **count**                          | Number of photos to display.                                |
 
 ## How to obtain a Instagram Acess Token
 
-You can get one here: [http://www.pinceladasdaweb.com.br/instagram/access-token/](http://www.pinceladasdaweb.com.br/instagram/access-token/)
+[See the wiki how to get your token](https://github.com/pinceladasdaweb/Nodegram/wiki)
 
 ## How to run this project
 
@@ -51,9 +52,15 @@ Open files in public/css/souce/ and customize as you wish. Then run the followin
 $ grunt
 ```
 
+## Browser Support
+
+![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+IE 9+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+
 ## Contributing
 
-Check [CONTRIBUTING.md](https://github.com/pinceladasdaweb/Nodegram/blob/master/CONTRIBUTING.md) for more information.
+Check [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## History
 
